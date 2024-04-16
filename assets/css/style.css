@@ -152,6 +152,7 @@ body { background: var(--smoky-black); }
 
 .sidebar,
 article {
+height: fit-content;
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
@@ -314,6 +315,7 @@ main {
 .sidebar.active { max-height: 405px; }
 
 .sidebar-info {
+  min-height: max-content;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -335,12 +337,13 @@ main {
 }
 
 .info-content .title {
+  height: fit-content;
   color: var(--white-1);
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
-  width: max-content;
-  padding: 3px 12px;
+min-width: 90px;
+  padding: 5px 12px;
   border-radius: 8px;
 }
 
