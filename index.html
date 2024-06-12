@@ -6,16 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>My Portfolio</title>
- <script>
-  function downloadFile() {
-    const link = document.createElement('a');
-    link.href = 'assets\AdharshBoddulResume.pdf';  // Path to your file
-    link.download = 'AdharshBoddulResume.pdf';  // File name for the download
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-</script>
 
   <!--
     - favicon
@@ -215,15 +205,16 @@
           <li class="service-item" >
 
             <div class="service-icon-box">
-             <a  onclick="downloadFile()">
+             <a  href="assets\AdharshBoddulResume.pdf" download>
                <img src="./assets/images/logo1f.png" alt="design icon" width="60"></a>
             </div>
 
             
-            <div class="service-content-box" ><a  onclick="downloadFile()">
-              <h4 class="h4 service-item-title">Click To Download</h4>
+            <div class="service-content-box" >
+              <a  href="assets\AdharshBoddulResume.pdf" download>
+                <h4 class="h4 service-item-title">Click To Download</h4>
             </a>
-            <a  onclick="downloadFile()">
+            <a  href="assets\AdharshBoddulResume.pdf" download>
 
               <p class="service-item-text">
                 a resume in a pdf
