@@ -6,6 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>My Portfolio</title>
+ <script>
+  function downloadFile() {
+    const link = document.createElement('a');
+    link.href = 'assets\AdharshBoddulResume.pdf';  // Path to your file
+    link.download = 'AdharshBoddulResume.pdf';  // File name for the download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
 
   <!--
     - favicon
@@ -199,6 +209,30 @@
           <p>
             I possess proficiency in various programming languages, including HTML, CSS, JavaScript, ReactJS, and PHP, acquired through self-directed learning. My commitment to staying current with emerging technologies has empowered me to build a well-rounded skill set. I have a solid grasp of both front-end and back-end development, using my expertise to create dynamic and responsive web applications. Transforming design concepts into functional, user-friendly interfaces is one of my strengths, and I bring hands-on experience from collaborative projects. I am actively seeking opportunities to apply my versatile skill set and contribute to innovative web development initiatives.
           </p>
+
+          <h2 class="h2 article-title">My Resume</h2>
+
+          <li class="service-item" >
+
+            <div class="service-icon-box">
+             <a href="assets\AdharshBoddulResume.pdf" target="_blank" onclick="downloadFile()">
+               <img src="./assets/images/logo1f.png" alt="design icon" width="60"></a>
+            </div>
+
+            
+            <div class="service-content-box" ><a href="assets\AdharshBoddulResume.pdf" target="_blank" onclick="downloadFile()">
+              <h4 class="h4 service-item-title">Click To Download</h4>
+            </a>
+            <a href="assets\AdharshBoddulResume.pdf" target="_blank" onclick="downloadFile()">
+
+              <p class="service-item-text">
+                a resume in a pdf
+              </p>
+              </a>
+            </div>
+
+          </li>
+
           <h2 class="h2 article-title">My Projects as a Web Developer</h2>
 
 
@@ -225,6 +259,7 @@
           
           
           <br>
+          
           <li class="service-item" >
 
             <div class="service-icon-box">

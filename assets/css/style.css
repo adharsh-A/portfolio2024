@@ -523,6 +523,9 @@ min-width: 90px;
   box-shadow: var(--shadow-2);
   z-index: 1;
 }
+.arrowpointer{
+  cursor: pointer;
+}
 
 .service-item::before {
   content: "";
