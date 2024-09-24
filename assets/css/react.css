@@ -1,48 +1,51 @@
 body {
   border: 0;
-  margin: 0%;
   padding: 0;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   /* Add your background pattern here */
-   background: repeating-radial-gradient(
+  /* Add your background pattern here */
+  background: repeating-radial-gradient(
     circle,
     #000,
     #000 5px,
     transparent 6px
   );
+  width: 100%;
+  height: 100%;
   background-size: 20px 20px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 4rem;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   /* background-color: #111111;
   background-image: linear-gradient(
     32deg,
     rgba(8, 8, 8, 0.74) 30px,
     transparent
-  );
-  background-size: 60px 60px;
-  background-position: -5px -5px; */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    );
+    background-size: 60px 60px;
+    background-position: -5px -5px; */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    
+    padding-top: 3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .heading {
-
   background-image: -webkit-linear-gradient(
     45deg,
     #ffd0ef 23%,
@@ -57,34 +60,52 @@ a {
   text-align: center;
 }
 .card {
-    text-decoration: none;
-    font-size: medium;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 1rem;
+  font-size: 1.2rem;
   border: #ecedff 1px solid;
-  border-radius: 120px;
-  padding: 10px 10px;
-  margin: 10px;
-  width: 300px;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 260px;
   text-align: center;
   background-color: #111111;
-
   color: wheat;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.1s ease,
     box-shadow 0.1s ease;
+  margin-bottom: 10px;
 }
 .card:hover {
-  background-color: #c169f7db;
+  /* background-color: #c169f7db; */
+  background-image: linear-gradient(
+    45deg,
+    #111111 23%,
+    #454545 72%,
+    #222222 98%,
+    #1a202c 88%
+  );
   scale: 1.01;
-  color: #111111;
+  color: #ffffff;
+  font-weight: 600;
   border: wheat 2px solid;
   z-index: 1;
 }
 .card:active {
-  background-color: #c169f7db;
+  background-image: linear-gradient(
+    45deg,
+    #111111 23%,
+    #454545 72%,
+    #222222 98%,
+    #1a202c 88%
+  );
   transform: scale(0.95);
 }
 .description {
-    font-size:0rem; 
-    font-weight: 100;
-    color: white;
+  text-align: center;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+  padding: 0;
 }

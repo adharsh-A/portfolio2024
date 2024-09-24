@@ -514,7 +514,12 @@ min-width: 90px;
   grid-template-columns: 1fr;
   gap: 20px;
 }
-
+.skills{
+  display: flex;
+  flex-direction: row;
+  gap:6rem;
+  margin-bottom: 1rem;
+}
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
