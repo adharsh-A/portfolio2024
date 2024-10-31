@@ -12,7 +12,7 @@ body {
     transparent 6px
   );
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: 20px 20px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -26,16 +26,8 @@ a {
   flex-direction: row;
   gap: 4rem;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  /* background-color: #111111;
-  background-image: linear-gradient(
-    32deg,
-    rgba(8, 8, 8, 0.74) 30px,
-    transparent
-    );
-    background-size: 60px 60px;
-    background-position: -5px -5px; */
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -45,6 +37,38 @@ a {
     padding-top: 3rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+@media  (max-width: 768px) {
+  .container {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+        justify-content: center;
+    align-items: center;
+  }
+  .heading {
+    text-align: left;
+    margin: auto;
+    margin-bottom:10px;
+    font-size: 2rem;
+  }
+  .card{
+    justify-self:center;
+    width: 20px;
+    max-width: 200px;
+
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+  
+ 
 .heading {
   background-image: -webkit-linear-gradient(
     45deg,
