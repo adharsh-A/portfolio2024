@@ -1,6 +1,8 @@
-import Link from "next/link"
-import React from "react"
-import { Button } from "./ui/button"
+"use client";
+import Link from "next/link";
+import React from "react";
+import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -33,9 +35,9 @@ const projects = [
     code: "https://github.com/adharsh-A/talent-finder-frontend",
     previewVideo: "/videos/talent.mp4",
     technologies: [
-"React",
+      "React",
       "Node",
-      "Tailwind CSS", 
+      "Tailwind CSS",
       "Express",
       "Three.js",
       "Socket",
@@ -59,7 +61,7 @@ const projects = [
       "Node",
       "CSS",
       "Material UI",
-      "Tailwind CSS", 
+      "Tailwind CSS",
       "Express",
       "Context API",
       "JWT",
@@ -83,23 +85,16 @@ const projects = [
       "Context API",
       "Framer Motion",
       "Shadcn UI",
-      
     ],
   },
   {
     id: 5,
     title: "Paypal Clone-Frontend",
-    description:
-      "frontend of paypal clone",
+    description: "frontend of paypal clone",
     link: "https://paypal-frontend-clone.vercel.app/",
     code: "https://github.com/adharsh-A/PayPal-Frontend-Clone",
     previewVideo: "/videos/paypal.mp4",
-    technologies: [
-      "React",
-      "CSS",
-      "Tailwind CSS",
-      "Context API",
-    ],
+    technologies: ["React", "CSS", "Tailwind CSS", "Context API"],
   },
   {
     id: 6,
@@ -109,15 +104,9 @@ const projects = [
     link: "https://js-portfolio24.netlify.app/",
     code: "https://github.com/adharsh-A/JS30",
     previewVideo: "/videos/js30.mp4",
-    technologies: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-    
-    ],
+    technologies: ["JavaScript", "HTML", "CSS", "Tailwind CSS"],
   },
-]
+];
 
 function Projects() {
   return (
@@ -133,10 +122,15 @@ function Projects() {
             previewVideo,
             technologies,
             title,
-          } = projectDetails
+          } = projectDetails;
 
           return (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }} // Trigger when in view
+              viewport={{ once: false, amount: 0.25 }} // Trigger only once
+              exit={{ opacity: 0, y: 50 }} // Exit state
+              transition={{ duration: 0.5 }}
               key={id}
               className="flex flex-col border rounded-md dark:border-gray-700"
             >
@@ -146,17 +140,18 @@ function Projects() {
                 muted
                 loop
                 className="rounded-t-md"
+                aria-label={`${title} preview video`}
               />
               <div className="flex flex-col gap-3 p-4 grow">
                 <h2 className="text-xl font-bold">{title}</h2>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   {description}
                 </p>
-                <div className="flex flex-wrap gap-[4px]">
+                <div className="flex flex-wrap gap-2">
                   {technologies.map((technology) => (
                     <span
                       key={technology}
-                      className="bg-slate-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
+                      className="bg-slate-100 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
                     >
                       {technology}
                     </span>
@@ -171,12 +166,12 @@ function Projects() {
                   </Link>
                 </div>
               </div>
-            </div>
-          )
+            </motion.div>
+          );
         })}
       </div>
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
