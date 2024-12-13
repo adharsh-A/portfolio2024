@@ -15,7 +15,7 @@ export default function Intro() {
       <div className="flex items-center justify-center md:mb-0 z-20">
         <Image
           src={ProfilePic}
-          alt="Akshay Prajapati"
+          alt="Adharsh"
           width={160}
           height={160}
           className="  border-2 border-gray-300 rounded-full object-cover"
