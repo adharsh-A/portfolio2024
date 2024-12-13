@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <div className="w-full flex flex-col-reverse lg:flex-row gap-14 justify-between items-center -z-10">
       <div className="flex flex-col gap-2 w-full lg:w-4/5">
-        <h1 className="text-4xl font-bold mb-4">Hi! I&apos;m Adharsh</h1>
+        <h1 className="text-4xl font-bold mb-4">Hi! Im Adharsh</h1>
         <p >
           Motivated full-stack developer with a strong foundation in both front-end and back-end technologies. Eager to contribute to innovative projects while continuing to grow my skills
           
