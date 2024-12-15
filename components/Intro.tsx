@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from "next/image";
 import ProfilePic from "@/app/images/me1.gif";
 import { motion } from "framer-motion";
