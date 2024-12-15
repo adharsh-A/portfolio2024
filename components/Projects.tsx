@@ -129,8 +129,8 @@ function Projects() {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }} // Trigger when in view
               viewport={{ once: false, amount: 0.15 }} // Trigger only once
-              exit={{ opacity: 0, x: [0, -200] }} // Exit state
-              transition={{ duration: 1,delay:index*0.3  }}
+              exit={{ opacity: 0, x:-200 }} // Exit state
+              transition={{ duration: 1,delay:index*0.2  }}
               key={id}
               className="flex flex-col border rounded-md dark:border-gray-700"
             >

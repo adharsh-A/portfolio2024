@@ -8,9 +8,9 @@ export default function Intro() {
     <div className="w-full flex flex-col-reverse lg:flex-row gap-14 justify-between items-center -z-10">
       <div className="flex flex-col gap-2 w-full lg:w-4/5">
         <motion.h1
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -70 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.5 }}
           className="text-4xl font-bold mb-4"
         >
           {Array.from("Hi! Im Adharsh").map((char, index) => (
@@ -20,24 +20,32 @@ export default function Intro() {
               animate={{ opacity: 1 }}
               transition={{
                 duration: 0.2,
-                delay: index * 0.2,
+                delay: index * 0.1,
               }}
             >
               {char}
             </motion.span>
           ))}
         </motion.h1>
-        <p>
+        <motion.p
+          initial={{ filter: "blur(5px)", opacity: 0 }}
+          animate={{ filter: "blur(0px)", opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           Motivated full-stack developer with a strong foundation in both
           front-end and back-end technologies. Eager to contribute to innovative
           projects while continuing to grow my skills
-        </p>
-        <p className="text-base text-gray-800 dark:text-gray-300 w-full">
+        </motion.p>
+                  <motion.p
+          initial={{ filter: "blur(5px)", opacity: 0 }}
+          animate={{ filter: "blur(0px)", opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-base text-gray-800 dark:text-gray-300 w-full">
           I am now actively seeking opportunities where I can apply this
           versatile skill set and contribute to forward-thinking web development
           projects. Feel free to explore my portfolio and reach out if youre
           interested in collaborating or learning more!
-        </p>
+        </motion.p>
       </div>
       <motion.div
         className="flex items-center justify-center md:mb-0 z-20"

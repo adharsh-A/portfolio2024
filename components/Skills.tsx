@@ -48,7 +48,7 @@ function Skills() {
   transition={{ duration: 0.5, delay: index * 0.1 }}
   whileHover={{ scale: 1.1, backgroundColor: "#4a5568", color: "#edf2f7" }} // Change colors on hover
           whileInView={{ opacity: [0, 1], y: [20, 0] }} // Animate on entr
-  exit={{ opacity: [1, 0], y: [0, 20] }} // Animate on exit
+  // exit={{ opacity: [1, 0], y: [0, 20] }} // Animate on exit
     className="cursor-pointer bg-gray-500 text-gray-100 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
       >
     {skill}
