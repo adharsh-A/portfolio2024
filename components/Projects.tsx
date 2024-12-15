@@ -113,7 +113,7 @@ function Projects() {
     <div className="flex flex-col gap-4 w-full">
       <h1 className="text-2xl font-bold">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projects.map((projectDetails) => {
+        {projects.map((projectDetails,index) => {
           const {
             id,
             code,
@@ -126,11 +126,11 @@ function Projects() {
 
           return (
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }} // Trigger when in view
-              viewport={{ once: false, amount: 0.25 }} // Trigger only once
-              exit={{ opacity: 0, y: 50 }} // Exit state
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }} // Trigger when in view
+              viewport={{ once: false, amount: 0.15 }} // Trigger only once
+              exit={{ opacity: 0, x: [0, -200] }} // Exit state
+              transition={{ duration: 1,delay:index*0.3  }}
               key={id}
               className="flex flex-col border rounded-md dark:border-gray-700"
             >
