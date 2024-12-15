@@ -3,4 +3,4 @@
   publish = "out"
 
 [context.production.environment]
-  NODE_VERSION = "16" # Or the version of Node.js your project requires
+  NODE_VERSION = "18.18.0"
