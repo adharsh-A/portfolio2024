@@ -30,7 +30,7 @@ export default function Intro() {
         <motion.p
           initial={{ filter: "blur(5px)", opacity: 0 }}
           animate={{ filter: "blur(0px)", opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5,  }}
         >
           Motivated full-stack developer with a strong foundation in both
           front-end and back-end technologies. Eager to contribute to innovative

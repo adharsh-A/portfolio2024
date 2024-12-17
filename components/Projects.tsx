@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    title: "Real-Time Chat Application",
+    title: "Real-Time Chat Application(Full Stack)",
     description:
       "Built a feature-rich real-time chat application to enable seamless communication between users with a focus on performance and responsiveness.",
     link: "https://chat-app-frontend1.vercel.app/",
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 3,
-    title: " E-commerce Platform with Admin Dashboard",
+    title: " E-commerce Platform with Admin Dashboard(Full Stack)",
     description:
       "Built a comprehensive e-commerce application with features for product management, shopping cart,order management, secure payments integration and admin panel.",
     link: "https://jumpsquad.vercel.app/",
@@ -72,6 +72,21 @@ const projects = [
   },
   {
     id: 4,
+    title: "Landing Page-Frontend Showcase",
+    description:
+      "built an elegant and responsive landing page that showcases the skills and experience of a frontend developer and animation with Framer Motion.",
+    link: "https://landing-page1-navy.vercel.app/",
+    code: "https://github.com/adharsh-A/landing-page-1",
+    previewVideo: "/videos/landing1.webm",
+    technologies: [
+      "React",
+      "CSS",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+  },
+  {
+    id: 5,
     title: "Marketing Budget Calculator",
     description:
       " Effortlessly allocate your marketing budget across Instagram, Google, and YouTube with real-time insights for maximum ROI. ",
@@ -88,7 +103,7 @@ const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Paypal Clone-Frontend",
     description: "frontend of paypal clone",
     link: "https://paypal-frontend-clone.vercel.app/",
@@ -97,7 +112,7 @@ const projects = [
     technologies: ["React", "CSS", "Tailwind CSS", "Context API"],
   },
   {
-    id: 6,
+    id: 7,
     title: "30+ Mini Projects in JavaScript",
     description:
       "Explore my diverse web applications showcasing front-end development, API integration, and user interface design skills.",
