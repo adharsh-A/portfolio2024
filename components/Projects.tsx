@@ -12,7 +12,7 @@ const projects = [
       "Built a feature-rich real-time chat application to enable seamless communication between users with a focus on performance and responsiveness.",
     link: "https://chat-app-frontend1.vercel.app/",
     code: "https://github.com/adharsh-A/chat-app-frontend",
-    previewVideo: "/videos/chat.mp4",
+    previewVideo: "/videos/chat.webm",
     technologies: [
       "React.js",
       "Node.js",
@@ -33,7 +33,7 @@ const projects = [
       "Developed a platform to connect companies and candidates, emphasizing seamless user experience and secure data handling.",
     link: "https://talent-finder-frontend.vercel.app/",
     code: "https://github.com/adharsh-A/talent-finder-frontend",
-    previewVideo: "/videos/talent.mp4",
+    previewVideo: "/videos/talent.webm",
     technologies: [
       "React",
       "Node",
@@ -54,7 +54,7 @@ const projects = [
       "Built a comprehensive e-commerce application with features for product management, shopping cart,order management, secure payments integration and admin panel.",
     link: "https://jumpsquad.vercel.app/",
     code: "https://github.com/adharsh-A/jumpsquad-ecom-frontend",
-    previewVideo: "/videos/jumpsquad.mp4",
+    previewVideo: "/videos/jumpsquad.webm",
     technologies: [
       "React",
       "Three.js",
@@ -92,7 +92,7 @@ const projects = [
       " Effortlessly allocate your marketing budget across Instagram, Google, and YouTube with real-time insights for maximum ROI. ",
     link: "https://marketing-budget-calculator.vercel.app/",
     code: "https://github.com/adharsh-A/MarketingBudgetCalculator",
-    previewVideo: "/videos/market.mp4",
+    previewVideo: "/videos/market.webm",
     technologies: [
       "React",
       "CSS",
@@ -108,7 +108,7 @@ const projects = [
     description: "frontend of paypal clone",
     link: "https://paypal-frontend-clone.vercel.app/",
     code: "https://github.com/adharsh-A/PayPal-Frontend-Clone",
-    previewVideo: "/videos/paypal.mp4",
+    previewVideo: "/videos/paypal.webm",
     technologies: ["React", "CSS", "Tailwind CSS", "Context API"],
   },
   {
@@ -118,7 +118,7 @@ const projects = [
       "Explore my diverse web applications showcasing front-end development, API integration, and user interface design skills.",
     link: "https://js-portfolio24.netlify.app/",
     code: "https://github.com/adharsh-A/JS30",
-    previewVideo: "/videos/js30.mp4",
+    previewVideo: "/videos/js30.webm",
     technologies: ["JavaScript", "HTML", "CSS", "Tailwind CSS"],
   },
 ];
