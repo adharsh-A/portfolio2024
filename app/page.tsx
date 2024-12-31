@@ -1,12 +1,23 @@
+// Code-split components using dynamic imports for better performance
 import dynamic from "next/dynamic"
+
+// Keep Intro and CustomDock non-dynamic since they are above the fold
 import Intro from "@/components/Intro"
 import { CustomDock } from "@/components/CustomDock"
-import WorkExperience from "@/components/WorkExperience"
-import Education from "@/components/Education"
-import Skills from "@/components/Skills"
-import Projects from "@/components/Projects"
-import ContactMe from "@/components/ContactMe"
 
+// Dynamically import components below the fold
+const Education = dynamic(() => import("@/components/Education"), {
+  ssr: true,
+})
+const Skills = dynamic(() => import("@/components/Skills"), {
+  ssr: true,
+})
+const Projects = dynamic(() => import("@/components/Projects"), {
+  ssr: true,
+})
+const ContactMe = dynamic(() => import("@/components/ContactMe"), {
+  ssr: true,
+})
 const Meteors = dynamic(() => import("@/components/magicui/meteors"), {
   ssr: false,
 })
