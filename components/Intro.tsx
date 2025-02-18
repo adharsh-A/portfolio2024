@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import ProfilePic from "@/app/images/me1.webp";
 import { motion } from "framer-motion";
@@ -30,26 +30,25 @@ export default function Intro() {
         <motion.p
           initial={{ filter: "blur(5px)", opacity: 0 }}
           animate={{ filter: "blur(0px)", opacity: 1 }}
-          transition={{ duration: 0.5,  }}
+          transition={{ duration: 0.5 }}
         >
-          Motivated full-stack developer with a strong foundation in both
-          front-end and back-end technologies. Eager to contribute to innovative
-          projects while continuing to grow my skills
-        </motion.p>
-                  <motion.p
+          As a Full-Stack Developer, I craft robust, scalable applications with 
+         seamless user experiences. I create engaging interfaces and architect 
+         secure, high-performance backend systems - delivering end-to-end solutions 
+         that make an impact.        </motion.p>
+        <motion.p
           initial={{ filter: "blur(5px)", opacity: 0 }}
           animate={{ filter: "blur(0px)", opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-base text-gray-800 dark:text-gray-300 w-full">
-          I am now actively seeking opportunities where I can apply this
-          versatile skill set and contribute to forward-thinking web development
-          projects. Feel free to explore my portfolio and reach out if youre
-          interested in collaborating or learning more!
-        </motion.p>
+          className="text-base text-gray-800 dark:text-gray-300 w-full"
+        >
+          I prioritize writing clean, efficient code while following industry best
+          practices. My problem-solving mindset drives me to optimize performance
+          and create seamless user experiences. I'm passionate about building
+          impactful solutions and bringing innovative ideas to life. Check out my
+          projects at https://github.com/adharsh-A.        </motion.p>
       </div>
-      <motion.div
-        className="flex items-center justify-center md:mb-0 z-20"
-      >
+      <motion.div className="flex items-center justify-center md:mb-0 z-20">
         <Image
           src={ProfilePic}
           alt="Adharsh"
