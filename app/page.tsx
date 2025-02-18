@@ -4,6 +4,7 @@ import dynamic from "next/dynamic"
 // Keep Intro and CustomDock non-dynamic since they are above the fold
 import Intro from "@/components/Intro"
 import { CustomDock } from "@/components/CustomDock"
+import WorkExperience from "@/components/WorkExperience"
 
 // Dynamically import components below the fold
 const Education = dynamic(() => import("@/components/Education"), {
@@ -28,7 +29,7 @@ export default function Home() {
       <div className="fixed inset-0 pointer-events-none light-mode-fade-bottom dark:fade-bottom z-10 bg-white/10 dark:bg-black/10" />
       <CustomDock />
       <Intro />
-      {/* <WorkExperience /> */}
+      <WorkExperience />
       <Education />
       <Skills />
       <Projects />

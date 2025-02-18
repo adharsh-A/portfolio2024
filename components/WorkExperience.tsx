@@ -8,31 +8,30 @@ interface WorkExperienceItem {
 }
 
 const workExperienceData: WorkExperienceItem[] = [
-  {
-    id: 2,
-    startDate: "Jul 2021",
-    endDate: "",
-    companyName: "Tatvasoft, Ahmedabad",
-    jobTitle: "Software Engineer",
-    description: [
-      "Collaborated closely with product managers, designers, and backend engineers, leading to the timely delivery of features.",
-      "Stayed up-to-date on the latest front-end technologies, introducing and implementing innovative solutions in the company's flagship product.",
-      "Worked on three key projects: DEEGEE, which was based on social media NFT sharing, WTT, which was based on e-commerce, and Andrew's app, which was based on a social media platform.",
-      "Enhanced skills in React, Typescript, HTML, CSS, JavaScript, JSON, React Hooks, Material UI, Redux, and REST API Integration.",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   startDate: "Jul 2021",
+  //   endDate: "",
+  //   companyName: "Tatvasoft, Ahmedabad",
+  //   jobTitle: "Software Engineer",
+  //   description: [
+  //     "Collaborated closely with product managers, designers, and backend engineers, leading to the timely delivery of features.",
+  //     "Stayed up-to-date on the latest front-end technologies, introducing and implementing innovative solutions in the company's flagship product.",
+  //     "Worked on three key projects: DEEGEE, which was based on social media NFT sharing, WTT, which was based on e-commerce, and Andrew's app, which was based on a social media platform.",
+  //     "Enhanced skills in React, Typescript, HTML, CSS, JavaScript, JSON, React Hooks, Material UI, Redux, and REST API Integration.",
+  //   ],
+  // },
   {
     id: 1,
-    startDate: "Oct 2020",
-    endDate: "Jul 2021",
-    companyName: "Tatvasoft, Ahmedabad",
-    jobTitle: "Trainee Software Engineer",
-    description: [
-      "Developed web applications using the .NET MVC framework, focusing on both front-end (Views) and back-end (Models and Controllers).",
-      "Gained hands-on experience with HTML, CSS, and JavaScript to create responsive and dynamic user interfaces within the MVC architecture.",
-      "Worked on SQL databases, performing CRUD operations and managing data integration with .NET applications.",
-      "Collaborated with senior developers to understand MVC architecture, emphasizing code organization, separation of concerns, and efficient database interaction.",
-      "Worked on the Notes Market Place project, which is based on selling and buying study notes.",
+    startDate: "Jan 20205",
+    endDate: "Present",
+    companyName: "Tek Tree LLC",
+    jobTitle: "Junior Full Stack Developer",
+description: [
+      "Developed full-stack web applications with seamless front-end and back-end integration.",
+      "Implemented responsive designs to ensure optimal user experience across devices and browsers.",
+      "Built scalable code using modern web technologies and best practices.",
+      "Collaborated with teams to debug issues, optimize performance, and improve application scalability."
     ],
   },
 ]
@@ -63,7 +62,7 @@ const WorkExperience: React.FC = () => {
               <h2 className="mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 {companyName}
               </h2>
-              <div className="text-base font-normal text-gray-700 dark:text-gray-400">
+              <div className="text-base font-normal text-gray-700 dark:text-gray-400 ">
                 <ul>
                   {description.map((desc) => (
                     <li key={desc}>
