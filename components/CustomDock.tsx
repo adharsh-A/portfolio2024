@@ -60,7 +60,8 @@ const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/adharsh-boddul-6847a3235/",
+        url: "https://www.linkedin.com/in/adharsh-b-6847a3235/",
+        // url: "https://www.linkedin.com/in/adharsh-boddul-6847a3235/",
         icon: Icons.linkedin,
       },
       Twitter: {
