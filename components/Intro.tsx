@@ -32,21 +32,23 @@ export default function Intro() {
           animate={{ filter: "blur(0px)", opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          As a Full-Stack Developer, I craft robust, scalable applications with 
-         seamless user experiences. I create engaging interfaces and architect 
-         secure, high-performance backend systems - delivering end-to-end solutions 
-         that make an impact.        </motion.p>
+          As a Full-Stack Developer, I craft robust, scalable applications with
+          seamless user experiences. I create engaging interfaces and architect
+          secure, high-performance backend systems - delivering end-to-end
+          solutions that make an impact.{" "}
+        </motion.p>
         <motion.p
           initial={{ filter: "blur(5px)", opacity: 0 }}
           animate={{ filter: "blur(0px)", opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-base text-gray-800 dark:text-gray-300 w-full"
         >
-          I prioritize writing clean, efficient code while following industry best
-          practices. My problem-solving mindset drives me to optimize performance
-          and create seamless user experiences. I'm passionate about building
-          impactful solutions and bringing innovative ideas to life. Check out my
-          projects at https://github.com/adharsh-A.        </motion.p>
+          I prioritize writing clean, efficient code while following industry
+          best practices. My problem-solving mindset drives me to optimize
+          performance and create seamless user experiences. I&apos;m passionate about
+          building impactful solutions and bringing innovative ideas to life.
+          Check out my projects at https://github.com/adharsh-A.
+        </motion.p>
       </div>
       <motion.div className="flex items-center justify-center md:mb-0 z-20">
         <Image
