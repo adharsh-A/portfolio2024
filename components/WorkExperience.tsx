@@ -23,7 +23,7 @@ const workExperienceData: WorkExperienceItem[] = [
   // },
   {
     id: 1,
-    startDate: "Jan 20205",
+    startDate: "Jan 2025",
     endDate: "Present",
     companyName: "Tek Tree LLC",
     jobTitle: "Junior Full Stack Developer",
