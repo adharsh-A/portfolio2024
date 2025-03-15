@@ -8,7 +8,7 @@ function ContactMe() {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         You can reach out to me on{" "}
         <Link
-          href="https://www.linkedin.com/in/adharsh-boddul-6847a3235/"
+          href="https://www.linkedin.com/in/adharsh-b-6847a3235/"
           target="_blank"
           className="text-blue-500"
         >

@@ -130,6 +130,23 @@ const projects = [
     previewVideo: "/videos/js30.webm",
     technologies: ["JavaScript", "HTML", "CSS", "Tailwind CSS"],
   },
+  {
+    id: 8,
+    title: "Video Sharing Platform",
+    description:
+      "A full-stack video sharing platform featuring live view counts, user authentication, and a database to store video details.",
+    link: "https://video-upload-n-play.vercel.app/",
+    code: "https://github.com/adharsh-A/video-upload-n-play-backend",
+    previewVideo: "/videos/video-upload.webm",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "Socket.io",
+      "PostgreSQL",
+      "Tailwind CSS",
+    ],
+  },
 ];
 
 function Projects() {
@@ -150,15 +167,15 @@ function Projects() {
 
           return (
             <motion.div
-              initial={{ opacity: 0, x: 200 }}
+              initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }} // Trigger when in view
               viewport={{ once: false, amount: 0.15 }} // Trigger only once
               exit={{ opacity: 0, x:-200 }} // Exit state
-              transition={{ duration: 1,delay:index*0.2  }}
+              transition={{ duration: 1,delay:index*0.3  }}
               key={id}
               className="flex flex-col border rounded-md dark:border-gray-700"
             >
-              <video
+              {/* <video
                 src={previewVideo}
                 autoPlay
                 muted
@@ -189,7 +206,46 @@ function Projects() {
                     <Button variant="outline">Code</Button>
                   </Link>
                 </div>
-              </div>
+              </div> */}
+
+    <div className="flex flex-col bg-white-950 dark:bg-gray-950 rounded-md shadow-lg overflow-hidden border border-gray-800 dark:border-gray-800 h-full">
+      <video
+        src={previewVideo}
+        autoPlay
+        muted
+        loop
+        className="w-full object-cover h-48"
+        aria-label={`${title} preview video`}
+      />
+      <div className="flex flex-col gap-4 p-5 grow">
+        <h2 className="text-xl font-semibold text-black-100 dark:text-gray-100">{title}</h2>
+        <p className="text-sm text-gray-400 dark:text-gray-400">
+          {description}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {technologies.map((technology) => (
+            <span
+              key={technology}
+              className="bg-gray-800 dark:bg-gray-800 text-gray-300 dark:text-gray-300 text-xs font-medium px-2.5 py-1 rounded-md border border-gray-700 dark:border-gray-700"
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
+        <div className="flex gap-3 mt-auto pt-4">
+          <Link href={link} target="_blank" className="w-full">
+            <Button variant="default" className="w-full bg-gray-800 hover:bg-gray-700 text-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200">
+              View Project
+            </Button>
+          </Link>
+          <Link href={code} target="_blank" className="w-full">
+            <Button variant="outline" className="w-full border-gray-700 dark:text-gray-300 hover:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800">
+              Source Code
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </div>
             </motion.div>
           );
         })}
