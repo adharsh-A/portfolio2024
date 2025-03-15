@@ -147,6 +147,21 @@ const projects = [
       "Tailwind CSS",
     ],
   },
+  {
+    id: 9,
+    title: "E-commerce Platform Mobile App",
+    description:
+      "A full-stack e-commerce platform mobile app with features for product management, shopping cart, order management, secure payments integration and admin panel.",
+    link: "",
+    isMobile: true,
+    code: "https://github.com/adharsh-A/ecom-expo-app",
+    previewVideo: "/videos/ecom-expo.webm",
+    technologies: [
+      "React Native",
+      "Expo",
+      "Tailwind CSS",
+    ],
+  },
 ];
 
 function Projects() {
@@ -163,6 +178,7 @@ function Projects() {
             previewVideo,
             technologies,
             title,
+            isMobile
           } = projectDetails;
 
           return (
@@ -214,7 +230,7 @@ function Projects() {
         autoPlay
         muted
         loop
-        className="w-full object-cover h-48"
+        className={`w-full object-cover h-48 ${isMobile ? 'px-40' : ''}`}
         aria-label={`${title} preview video`}
       />
       <div className="flex flex-col gap-4 p-5 grow">
