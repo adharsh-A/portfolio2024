@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
-    title: "Real-Time Chat Application(Full Stack)",
+    title: "Real-Time Chat Application (Full Stack)",
     description:
       "Built a feature-rich real-time chat application to enable seamless communication between users with a focus on performance and responsiveness.",
     link: "https://chat-app-frontend1.vercel.app/",
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Talent Finder - Full-Stack Job Marketplace Platform",
+    title: "Talent Finder - Job Marketplace Platform (Full Stack)",
     description:
       "Developed a platform to connect companies and candidates, emphasizing seamless user experience and secure data handling.",
     link: "https://talent-finder-frontend.vercel.app/",
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 3,
-    title: " E-commerce Platform with Admin Dashboard(Full Stack)",
+    title: " E-commerce Platform with Admin Dashboard (Full Stack)",
     description:
       "Built a comprehensive e-commerce application with features for product management, shopping cart,order management, secure payments integration and admin panel.",
     link: "https://jumpsquad.vercel.app/",
@@ -72,7 +72,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Landing Page-Frontend Showcase",
+    title: "Landing Page-Frontend Showcase (Frontend)",
     description:
       "built an elegant and responsive landing page that showcases the skills and experience of a frontend developer and animation with Framer Motion.",
     link: "https://landing-page1-navy.vercel.app/",
@@ -85,26 +85,35 @@ const projects = [
       "Framer Motion",
     ],
   },
+  // {
+  //   id: 5,
+  //   title: "Marketing Budget Calculator",
+  //   description:
+  //     " Effortlessly allocate your marketing budget across Instagram, Google, and YouTube with real-time insights for maximum ROI. ",
+  //   link: "https://marketing-budget-calculator.vercel.app/",
+  //   code: "https://github.com/adharsh-A/MarketingBudgetCalculator",
+  //   previewVideo: "/videos/market.webm",
+  //   technologies: [
+  //     "React",
+  //     "CSS",
+  //     "Tailwind CSS",
+  //     "Context API",
+  //     "Framer Motion",
+  //     "Shadcn UI",
+  //   ],
+  // },
   {
     id: 5,
-    title: "Marketing Budget Calculator",
-    description:
-      " Effortlessly allocate your marketing budget across Instagram, Google, and YouTube with real-time insights for maximum ROI. ",
-    link: "https://marketing-budget-calculator.vercel.app/",
-    code: "https://github.com/adharsh-A/MarketingBudgetCalculator",
-    previewVideo: "/videos/market.webm",
-    technologies: [
-      "React",
-      "CSS",
-      "Tailwind CSS",
-      "Context API",
-      "Framer Motion",
-      "Shadcn UI",
-    ],
+    title: "3D Interactive Landing Page (Frontend)",
+    description: "A visually stunning landing page featuring interactive 3D elements, built using modern web technologies for an engaging user experience.",
+    link: "https://0-3d-landing-page.vercel.app/",
+    code: "https://github.com/adharsh-A/0-3d-landing-page",
+    previewVideo: "/videos/3d-page.webm",
+    technologies: ["React", "ThreeJS", "Tailwind CSS"],
   },
   {
     id: 6,
-    title: "Paypal Clone-Frontend",
+    title: "Paypal Clone (Frontend)",
     description: "frontend of paypal clone",
     link: "https://paypal-frontend-clone.vercel.app/",
     code: "https://github.com/adharsh-A/PayPal-Frontend-Clone",
